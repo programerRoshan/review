@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block jumbotron %}
+<div class="container-fluid">
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-8">
+    <h1>Welcome to Django project</h1>
+    <p class="lead">Django is a free and open source web application framework written in Python.
+    A framework is nothing more than a collection of modules that make development easier.
+    They are grouped together, and allow you to create applications or websites from an existing source,
+    instead of from scratch.</p>
+      <a class="btn btn-lg btn-primary" href="{% url 'addPost' %}" role="button"><i class="fab fa-wpforms"></i> Feed Back &raquo;</a>
+  </div>
+<div class="col-md-4">
+<iframe width="400" height="315" src="https://www.youtube.com/embed/FNQxxpM1yOs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+
+</div>
+  <!--<a class="btn btn-lg btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs &raquo;</a>-->
+{% endblock jumbotron %}
+{% block content %}
+
+{% endblock content %}
